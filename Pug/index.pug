@@ -1,0 +1,25 @@
+extends templates/template.pug
+//-Append pour redeclarer les variables
+append config 
+    -titre = "Accueil"
+    -pageActuelle = "Accueil"
+
+block main
+    h1 Bienvenus à ma page 
+
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        |Voluptatem possimus unde tempora nihil eius sit ut, nam quod 
+        |cupiditate laboriosam ipsa est? Corporis minus ducimus illo 
+        |sit vitae voluptas amet? Lorem ipsum, dolor sit amet 
+        |consectetur adipisicing elit. Aliquam quia eaque dicta harum 
+        |deserunt maxime amet veniam earum minima! Illum possimus nesciunt 
+        |vero officia fuga laborum ad quo ut. Ut?
+
+    p Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        |Adipisci aspernatur, culpa et ducimus temporibus corrupti? Quasi 
+        |aut reprehenderit fugiat fuga eligendi beatae debitis iure enim 
+        |accusamus, hic libero deleniti consectetur!
+    
+block aside
+    h2 Suivez-nous sur facebook
+    a(href="https://fb.com" target="_blank") Suivre

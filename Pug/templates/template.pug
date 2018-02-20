@@ -1,0 +1,32 @@
+block config
+    include ../config/variables
+
+doctype html
+html(lang="fr")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(name="description" content= description)
+        title #{titre} | #{site}
+        link(rel="icon", href="img/favicon.ico")
+        link(rel="stylesheet", href="css/ed-grid.min.css")
+        link(rel="stylesheet", href="css/style.css")
+    body
+        header.ed-container
+            .ed-item.l-20
+                include ../blocks/logo
+            .ed-item.l-80   
+                nav
+                    include ../blocks/menu
+        #banner.ed-container
+            .ed-item
+                include ../blocks/banner
+        .ed-container
+            main.ed-item.l-75
+                block main
+            aside.ed-item.l-25
+                block aside
+        footer
+            .ed-container
+                .ed-item
+                    include ../blocks/footer

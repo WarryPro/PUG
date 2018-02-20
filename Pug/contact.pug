@@ -1,0 +1,37 @@
+extends templates/template.pug
+//-Append pour redeclarer les variables
+append config 
+    -titre = "Contact"
+    -pageActuelle = "Contact"
+
+block main
+    h1 Contactez-nous 
+
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        |Voluptatem possimus unde tempora nihil eius sit ut, nam quod 
+        |cupiditate laboriosam ipsa est? Corporis minus ducimus illo 
+        |sit vitae voluptas amet? Lorem ipsum, dolor sit amet 
+        |consectetur adipisicing elit. Aliquam quia eaque dicta harum 
+        |deserunt maxime amet veniam earum minima! Illum possimus nesciunt 
+        |vero officia fuga laborum ad quo ut. Ut?
+
+    form(action="process.php").ed-container.contact
+        .ed-item.l-30
+            label(for="noms") votre nom et prénom
+        .ed-item.l-70
+            input(type="text" id="noms" name="noms")
+        .ed-item.l-30
+            label(for="email") votre email
+        .ed-item.l-70
+            input(type="email" id="email" name="email")
+        .ed-item.l-30    
+            label(for="message") votre message
+        .ed-item.l-70    
+            textarea(name="message" id="message" cols="30", rows="10")
+        .ed-item.input-container    
+            input(type="submit").envoyer
+
+    
+block aside
+    h2 Suivez-nous sur facebook
+    a(href="https://fb.com" target="_blank") Suivre

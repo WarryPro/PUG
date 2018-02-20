@@ -1,0 +1,19 @@
+
+ul.ed-menu.l-horizontal.nav-bar
+    each page in pages
+        if page == "À propos de nous"
+            if page == pageActuelle
+                li: a(href="a-propos.html" class="selected") #{page}
+            else
+                li: a(href="a-propos.html") #{page}
+        else if page == "Accueil"
+            if page == pageActuelle
+                li: a(href="/" class="selected") #{page}
+            else
+                li: a(href="/") #{page}
+        else if page == pageActuelle
+            li: a(href=page + ".html" class="selected") #{page}
+        else
+            li: a(href=page + ".html") #{page}
+            
+

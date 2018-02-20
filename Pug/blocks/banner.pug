@@ -1,0 +1,4 @@
+//- parcoure le tableau pages déclaré dans le fichier variables.pug
+each image in pages
+    if image == pageActuelle
+        img(src="img/"+image + ".jpeg", alt=image)
