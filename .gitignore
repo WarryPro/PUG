@@ -4,3 +4,5 @@ node_modules
 .vscode
 js
 prepros-6.config
+gulpfile.js
+package.json
